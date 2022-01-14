@@ -1,0 +1,28 @@
+<SWButton@Button>:
+	font_size: '10pt'
+
+<SWLogic>:
+	sw_time: time
+	orientation: 'vertical'
+	
+	Label:
+		id: time
+		text: '00:00.00'
+		font_size: '20pt'
+		
+	BoxLayout:
+		size_hint: 1, 0.2
+		SWButton:
+			text: "START"
+			on_press: root.start()
+		SWButton:
+			text: "STOP"
+			on_press: root.stop()
+		
+	BoxLayout:
+		size_hint: 1, 0.2
+		SWButton:
+			text: "RESET"
+			on_press: root.reset()
+	
+
